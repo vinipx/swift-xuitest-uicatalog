@@ -74,4 +74,26 @@ final class UIKitCatalogUIBasicElementsTests: XCTestCase {
         XCTAssertTrue(blueWheelValue == "130")
     }
     
+    func testPickerViewByIndex() {
+        app.staticTexts["Picker View"].tap()
+        app.pickerWheels.element(boundBy: 0).adjust(toPickerWheelValue: "120")
+        app.pickerWheels.element(boundBy: 1).adjust(toPickerWheelValue: "255")
+        app.pickerWheels.element(boundBy: 2).adjust(toPickerWheelValue: "130")
+        
+        XCTAssertTrue(app.pickerWheels.element(boundBy: 0).value as! String == "120")
+        XCTAssertTrue(app.pickerWheels.element(boundBy: 1).value as! String == "255")
+        XCTAssertTrue(app.pickerWheels.element(boundBy: 2).value as! String == "130")
+    }
+    
+    func testSlider() {
+        app.staticTexts["Sliders"].tap()
+        app.sliders["42%"].adjust(toNormalizedSliderPosition: 0.9)
+        var expectedSliderPosition = String(format: "%.2f", app.sliders["91%"].normalizedSliderPosition)
+        XCTAssertTrue(expectedSliderPosition == "0.91")
+        
+        app.sliders["91%"].adjust(toNormalizedSliderPosition: 0.3)
+        expectedSliderPosition = String(format: "%.2f", app.sliders["28%"].normalizedSliderPosition)
+        XCTAssertTrue(expectedSliderPosition == "0.28")
+    }
+    
 }
