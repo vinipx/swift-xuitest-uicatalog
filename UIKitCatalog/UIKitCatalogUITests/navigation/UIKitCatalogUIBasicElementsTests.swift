@@ -3,17 +3,17 @@ import XCTest
 final class UIKitCatalogUIBasicElementsTests: XCTestCase {
     
     let app = XCUIApplication()
-
+    
     override func setUpWithError() throws {
         continueAfterFailure = false
         app.launch()
-
+        
     }
-
+    
     override func tearDownWithError() throws {
         app.terminate()
     }
-
+    
     func testSimpleNavigationBackandForth() throws {
         app.staticTexts["Alert Views"].tap()
         app.staticTexts["Simple"].tap()
@@ -124,6 +124,21 @@ final class UIKitCatalogUIBasicElementsTests: XCTestCase {
         app.typeText("secured words")
         let password = app.secureTextFields["Placeholder text"].value as! String
         XCTAssertFalse(password.isEmpty)
+    }
+    
+    func testTextFieldsDelete() {
+        app.staticTexts["Text Fields"].tap()
+        app.textFields.element(boundBy: 0).tap()
+        let valueTyped = "words to be deleted"
+        app.typeText(valueTyped)
+        
+        for _ in 0..<(valueTyped.count) {
+            app.keys["delete"].tap()
+        }
+        
+        let expectedTextValue = "Placeholder text" //"Placeholder text" still remains as value
+        let actualTextValue = app.textFields.element(boundBy: 0).value as! String
+        XCTAssertTrue(actualTextValue == expectedTextValue)
     }
     
 }
