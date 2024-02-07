@@ -14,16 +14,16 @@ final class UIKitCatalogUIBasicElementsTests: XCTestCase {
         app.terminate()
     }
 
-    func testSimpleNavigation() throws {
-        print("app launched successfully!")
+    func testSimpleNavigationBackandForth() throws {
         app.staticTexts["Alert Views"].tap()
         app.staticTexts["Simple"].tap()
         app.buttons["OK"].tap()
         app.staticTexts["Okay / Cancel"].tap()
         app.buttons["Cancel"].tap()
-        let tablesQuery = app.tables
-        tablesQuery.staticTexts["Buttons"].tap()
-        tablesQuery.buttons["Person"].tap()
+        app.buttons["UIKitCatalog"].tap()
+        app.staticTexts["Alert Views"].tap()
+        app.buttons["UIKitCatalog"].tap()
+        XCTAssertTrue(app.label == "UIKitCatalog")
     }
     
     func testCoordinates() {
@@ -100,6 +100,30 @@ final class UIKitCatalogUIBasicElementsTests: XCTestCase {
         app.staticTexts["Switches"].tap()
         app.switches["1"].firstMatch.tap()
         XCTAssertTrue(app.switches["0"].firstMatch.exists)
+    }
+    
+    func testTextFieldsPopulate() {
+        app.staticTexts["Text Fields"].tap()
+        
+        app.textFields.element(boundBy: 0).tap()
+        app.typeText("first words typed")
+        XCTAssertTrue(app.textFields.element(boundBy: 0).value as! String == "first words typed")
+        
+        app.textFields.element(boundBy: 1).tap()
+        app.typeText("more words typed")
+        XCTAssertTrue(app.textFields.element(boundBy: 1).value as! String == "more words typed")
+        
+        app.textFields.element(boundBy: 2).tap()
+        app.typeText("even more words typed")
+        XCTAssertTrue(app.textFields.element(boundBy: 2).value as! String == "even more words typed")
+    }
+    
+    func testSecureTextFieldsPopulateIsSecured() throws {
+        app.staticTexts["Text Fields"].tap()
+        app.secureTextFields["Placeholder text"].tap()
+        app.typeText("secured words")
+        let password = app.secureTextFields["Placeholder text"].value as! String
+        XCTAssertFalse(password.isEmpty)
     }
     
 }
