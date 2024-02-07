@@ -96,4 +96,10 @@ final class UIKitCatalogUIBasicElementsTests: XCTestCase {
         XCTAssertTrue(expectedSliderPosition == "0.28")
     }
     
+    func testSwitches() {
+        app.staticTexts["Switches"].tap()
+        app.switches["1"].firstMatch.tap()
+        XCTAssertTrue(app.switches["0"].firstMatch.exists)
+    }
+    
 }
