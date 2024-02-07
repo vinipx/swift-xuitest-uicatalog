@@ -1,18 +1,6 @@
 import XCTest
 
-final class UIKitCatalogUIBasicElementsTests: XCTestCase {
-    
-    let app = XCUIApplication()
-    
-    override func setUpWithError() throws {
-        continueAfterFailure = false
-        app.launch()
-        
-    }
-    
-    override func tearDownWithError() throws {
-        app.terminate()
-    }
+final class UIKitCatalogUIBasicElementsTests: BaseClass {
     
     func testSimpleNavigationBackandForth() throws {
         app.staticTexts["Alert Views"].tap()
@@ -40,7 +28,7 @@ final class UIKitCatalogUIBasicElementsTests: XCTestCase {
         app.searchFields.element.tap()
         app.searchFields.element.typeText(inputValue)
         let expectedValue = app.searchFields.element.value
-        XCTAssertTrue(expectedValue as! String == inputValue, "Text field value is different than input text!")
+        XCTAssertTrue(expectedValue as? String == inputValue, "Text field value is different than input text!")
     }
     
     func testMultipleTextFields() {
@@ -48,7 +36,7 @@ final class UIKitCatalogUIBasicElementsTests: XCTestCase {
         app.staticTexts["Text Fields"].tap()
         app.textFields.element(boundBy: 3).tap()
         app.textFields.element(boundBy: 3).typeText(inputValue)
-        let expectedValue = app.textFields.element(boundBy: 3).value as! String
+        let expectedValue = app.textFields.element(boundBy: 3).value as? String
         XCTAssertTrue(expectedValue == inputValue, "Text field value is different than input text!")
     }
     
@@ -62,15 +50,15 @@ final class UIKitCatalogUIBasicElementsTests: XCTestCase {
         app.staticTexts["Picker View"].tap()
         
         app.pickerWheels["Red color component value"].adjust(toPickerWheelValue: "120")
-        let redWheelValue = app.pickerWheels["Red color component value"].value as! String
+        let redWheelValue = app.pickerWheels["Red color component value"].value as? String
         XCTAssertTrue(redWheelValue == "120")
         
         app.pickerWheels["Green color component value"].adjust(toPickerWheelValue: "255")
-        let greenWheelValue = app.pickerWheels["Green color component value"].value as! String
+        let greenWheelValue = app.pickerWheels["Green color component value"].value as? String
         XCTAssertTrue(greenWheelValue == "255")
         
         app.pickerWheels["Blue color component value"].adjust(toPickerWheelValue: "130")
-        let blueWheelValue = app.pickerWheels["Blue color component value"].value as! String
+        let blueWheelValue = app.pickerWheels["Blue color component value"].value as? String
         XCTAssertTrue(blueWheelValue == "130")
     }
     
@@ -80,9 +68,9 @@ final class UIKitCatalogUIBasicElementsTests: XCTestCase {
         app.pickerWheels.element(boundBy: 1).adjust(toPickerWheelValue: "255")
         app.pickerWheels.element(boundBy: 2).adjust(toPickerWheelValue: "130")
         
-        XCTAssertTrue(app.pickerWheels.element(boundBy: 0).value as! String == "120")
-        XCTAssertTrue(app.pickerWheels.element(boundBy: 1).value as! String == "255")
-        XCTAssertTrue(app.pickerWheels.element(boundBy: 2).value as! String == "130")
+        XCTAssertTrue(app.pickerWheels.element(boundBy: 0).value as? String == "120")
+        XCTAssertTrue(app.pickerWheels.element(boundBy: 1).value as? String == "255")
+        XCTAssertTrue(app.pickerWheels.element(boundBy: 2).value as? String == "130")
     }
     
     func testSlider() {
@@ -99,7 +87,7 @@ final class UIKitCatalogUIBasicElementsTests: XCTestCase {
     func testSwitches() {
         app.staticTexts["Switches"].tap()
         app.switches["1"].firstMatch.tap()
-        XCTAssertTrue(app.switches["0"].firstMatch.exists)
+        XCTAssertTrue(app.switches["0"].firstMatch.waitForExistence(timeout: 1))
     }
     
     func testTextFieldsPopulate() {
@@ -107,15 +95,15 @@ final class UIKitCatalogUIBasicElementsTests: XCTestCase {
         
         app.textFields.element(boundBy: 0).tap()
         app.typeText("first words typed")
-        XCTAssertTrue(app.textFields.element(boundBy: 0).value as! String == "first words typed")
+        XCTAssertTrue(app.textFields.element(boundBy: 0).value as? String == "first words typed")
         
         app.textFields.element(boundBy: 1).tap()
         app.typeText("more words typed")
-        XCTAssertTrue(app.textFields.element(boundBy: 1).value as! String == "more words typed")
+        XCTAssertTrue(app.textFields.element(boundBy: 1).value as? String == "more words typed")
         
         app.textFields.element(boundBy: 2).tap()
         app.typeText("even more words typed")
-        XCTAssertTrue(app.textFields.element(boundBy: 2).value as! String == "even more words typed")
+        XCTAssertTrue(app.textFields.element(boundBy: 2).value as? String == "even more words typed")
     }
     
     func testSecureTextFieldsPopulateIsSecured() throws {
@@ -137,8 +125,10 @@ final class UIKitCatalogUIBasicElementsTests: XCTestCase {
         }
         
         let expectedTextValue = "Placeholder text" //"Placeholder text" still remains as value
-        let actualTextValue = app.textFields.element(boundBy: 0).value as! String
+        let actualTextValue = app.textFields.element(boundBy: 0).value as? String
         XCTAssertTrue(actualTextValue == expectedTextValue)
     }
+    
+    
     
 }
