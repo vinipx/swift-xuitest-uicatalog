@@ -25,7 +25,6 @@ class PickerWheelScreenTests: BaseTest {
     
     func testPickerViewScreen_whenFirstWheelIsSet_thenColorIsChanged() {
         let screen = PickerViewScreen(app: app)
-        //let actualColorValue = screen.
         screen.firstWheel.adjust(toPickerWheelValue: "40")
         screen.secondWheel.adjust(toPickerWheelValue: "200")
         screen.thirdWheel.adjust(toPickerWheelValue: "165")

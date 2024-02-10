@@ -17,9 +17,9 @@ class PickerViewScreen {
     
     init(app: XCUIApplication) {
         self.app = app
-        firstWheel = app.staticTexts["Simple"]
-        secondWheel = app.staticTexts["Okay / Cancel"]
-        thirdWheel = app.staticTexts["Other"]
+        firstWheel = app.pickerWheels["Red color component value"]
+        secondWheel = app.pickerWheels["Green color component value"]
+        thirdWheel = app.pickerWheels["Blue color component value"]
         backButton = app.buttons["UIKitCatalog"]
     }
     
