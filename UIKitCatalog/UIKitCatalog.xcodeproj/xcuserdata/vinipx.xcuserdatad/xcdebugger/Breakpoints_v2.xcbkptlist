@@ -36,5 +36,228 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E427A41A-959F-4FD3-A0AE-A1FB03C4E4CC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIKitCatalogUITests/navigation/UIKitCatalogUIBasicElementsTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "testSimpleNavigationBackandForth()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E427A41A-959F-4FD3-A0AE-A1FB03C4E4CC - 2dc532649b9d9531"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIKitCatalogUITests.UIKitCatalogUIBasicElementsTests.testSimpleNavigationBackandForth() throws -&gt; ()"
+                  moduleName = "UIKitCatalogUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinipx/Documents/coding/ios/swift-xuitest-uicatalog/UIKitCatalog/UIKitCatalogUITests/navigation/UIKitCatalogUIBasicElementsTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1848">
+               </Location>
+               <Location
+                  uuid = "E427A41A-959F-4FD3-A0AE-A1FB03C4E4CC - 2dc532649b9d9531"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIKitCatalogUITests.UIKitCatalogUIBasicElementsTests.testSimpleNavigationBackandForth() throws -&gt; ()"
+                  moduleName = "UIKitCatalogUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinipx/Documents/coding/ios/swift-xuitest-uicatalog/UIKitCatalog/UIKitCatalogUITests/navigation/UIKitCatalogUIBasicElementsTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1852">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BCB95B1C-48D7-4B6F-A754-4ECC8406703C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIKitCatalogUITests/navigation/UIKitCatalogUIBasicElementsTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "testTextFieldsDelete()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BCB95B1C-48D7-4B6F-A754-4ECC8406703C - 87b5cd15e0ab3d38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIKitCatalogUITests.UIKitCatalogUIBasicElementsTests.testTextFieldsDelete() -&gt; ()"
+                  moduleName = "UIKitCatalogUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinipx/Documents/coding/ios/swift-xuitest-uicatalog/UIKitCatalog/UIKitCatalogUITests/navigation/UIKitCatalogUIBasicElementsTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "1317">
+               </Location>
+               <Location
+                  uuid = "BCB95B1C-48D7-4B6F-A754-4ECC8406703C - 87b5cd15e0ab3d19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIKitCatalogUITests.UIKitCatalogUIBasicElementsTests.testTextFieldsDelete() -&gt; ()"
+                  moduleName = "UIKitCatalogUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinipx/Documents/coding/ios/swift-xuitest-uicatalog/UIKitCatalog/UIKitCatalogUITests/navigation/UIKitCatalogUIBasicElementsTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "1272">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84117BAF-2DC6-464D-8C68-99E41E42B156"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIKitCatalogUITests/Tests/HomeScreenTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "testHomeScreen_whenOpened_thenElementsAreLoaded()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C363C9A-B98E-4058-8FD4-A1F7AB170182"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIKitCatalogUITests/Tests/AlertViewsScreenTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "testAlertViewsScreen_whenOpened_thenElementsAreLoaded()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C458BB77-1DEB-498F-A107-1A0F2313D1C5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIKitCatalogUITests/Tests/AlertViewsScreenTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "testAlertViewsScreen_whenSimpleIsSelected_thenShortTitleIsBestAlertIsDisplayed()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "80F74B34-6441-46D4-A4EC-959FCE59B633"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIKitCatalogUITests/Tests/AlertViewsScreenTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "testAlertViewsScreen_whenConfirmCancelIsSelected_thenAlertIsDisplayed()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F9300CAD-1A4B-40DC-8A50-B7738EA911EF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIKitCatalogUITests/Tests/PickerWheelScreenTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "testPickerViewScreen_whenFirstWheelIsSet_thenColorIsChanged()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F9300CAD-1A4B-40DC-8A50-B7738EA911EF - 99c4cdb60170d0a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIKitCatalogUITests.PickerWheelScreenTests.testPickerViewScreen_whenFirstWheelIsSet_thenColorIsChanges() -&gt; ()"
+                  moduleName = "UIKitCatalogUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinipx/Documents/coding/ios/swift-xuitest-uicatalog/UIKitCatalog/UIKitCatalogUITests/Tests/PickerWheelScreenTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "F9300CAD-1A4B-40DC-8A50-B7738EA911EF - 43b7970d9aa918b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIKitCatalogUITests.PickerWheelScreenTests.testPickerViewScreen_whenFirstWheelIsSet_thenColorIsChanged() -&gt; ()"
+                  moduleName = "UIKitCatalogUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinipx/Documents/coding/ios/swift-xuitest-uicatalog/UIKitCatalog/UIKitCatalogUITests/Tests/PickerWheelScreenTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "F9300CAD-1A4B-40DC-8A50-B7738EA911EF - 43b7970d9aa918b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIKitCatalogUITests.PickerWheelScreenTests.testPickerViewScreen_whenFirstWheelIsSet_thenColorIsChanged() -&gt; ()"
+                  moduleName = "UIKitCatalogUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinipx/Documents/coding/ios/swift-xuitest-uicatalog/UIKitCatalog/UIKitCatalogUITests/Tests/PickerWheelScreenTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "153">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

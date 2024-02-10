@@ -1,6 +1,6 @@
 import XCTest
 
-final class UIKitCatalogUIBasicElementsTests: BaseClass {
+final class UIKitCatalogUIBasicElementsTests: BaseTest {
     
     func testSimpleNavigationBackandForth() throws {
         app.staticTexts["Alert Views"].tap()

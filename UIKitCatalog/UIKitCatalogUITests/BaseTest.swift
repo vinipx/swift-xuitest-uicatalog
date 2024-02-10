@@ -9,17 +9,20 @@
 import XCTest
 
 public class BaseTest : XCTestCase {
-    private var baseScreen = BaseScreen()
     
-    lazy var app = baseScreen.app
+    lazy var app = XCUIApplication()
     
-    open override func setUp() {
+    public override func setUp() {
         continueAfterFailure = false
         app.launch()
         
     }
     
-    open override func tearDown() {
+    public override func tearDown() {
+        let screenshot = XCUIScreen.main.screenshot()
+        let fullScreenshotAttachment = XCTAttachment(screenshot: screenshot)
+        fullScreenshotAttachment.lifetime = .deleteOnSuccess
+        add(fullScreenshotAttachment)
         app.terminate()
     }
 }

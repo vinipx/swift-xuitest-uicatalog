@@ -62,6 +62,15 @@
 		53CE5AFB1F2A8BEB00D8A656 /* TextFieldViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53CE5AF91F2A8BEB00D8A656 /* TextFieldViewController.storyboard */; };
 		B50F41081B1D284700E5147D /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50F41071B1D284700E5147D /* StackViewController.swift */; };
 		FA4CB2072B72738C0063A0D3 /* UIKitCatalogUIBasicElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CB2062B72738C0063A0D3 /* UIKitCatalogUIBasicElementsTests.swift */; };
+		FA4CB2122B73F61F0063A0D3 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CB2112B73F61F0063A0D3 /* BaseTest.swift */; };
+		FA4CB2142B73F7520063A0D3 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CB2132B73F7520063A0D3 /* HomeScreen.swift */; };
+		FA4CB2182B73FBF50063A0D3 /* HomeScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CB2172B73FBF50063A0D3 /* HomeScreenTests.swift */; };
+		FA4CB21C2B7405AF0063A0D3 /* AlertViewsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CB21B2B7405AF0063A0D3 /* AlertViewsScreen.swift */; };
+		FA4CB21E2B7408CD0063A0D3 /* AlertViewsScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CB21D2B7408CD0063A0D3 /* AlertViewsScreenTests.swift */; };
+		FABABC912B751EB400EE30F7 /* PickerViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABABC902B751EB400EE30F7 /* PickerViewScreen.swift */; };
+		FABABC932B751FB700EE30F7 /* PickerWheelScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABABC922B751FB700EE30F7 /* PickerWheelScreenTests.swift */; };
+		FABABC952B77908000EE30F7 /* SliderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABABC942B77908000EE30F7 /* SliderScreen.swift */; };
+		FABABC972B77917700EE30F7 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABABC962B77917700EE30F7 /* BaseScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +146,15 @@
 		B50F41071B1D284700E5147D /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		FA4CB2042B72738C0063A0D3 /* UIKitCatalogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitCatalogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4CB2062B72738C0063A0D3 /* UIKitCatalogUIBasicElementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitCatalogUIBasicElementsTests.swift; sourceTree = "<group>"; };
+		FA4CB2112B73F61F0063A0D3 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		FA4CB2132B73F7520063A0D3 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		FA4CB2172B73FBF50063A0D3 /* HomeScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTests.swift; sourceTree = "<group>"; };
+		FA4CB21B2B7405AF0063A0D3 /* AlertViewsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewsScreen.swift; sourceTree = "<group>"; };
+		FA4CB21D2B7408CD0063A0D3 /* AlertViewsScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewsScreenTests.swift; sourceTree = "<group>"; };
+		FABABC902B751EB400EE30F7 /* PickerViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewScreen.swift; sourceTree = "<group>"; };
+		FABABC922B751FB700EE30F7 /* PickerWheelScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerWheelScreenTests.swift; sourceTree = "<group>"; };
+		FABABC942B77908000EE30F7 /* SliderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderScreen.swift; sourceTree = "<group>"; };
+		FABABC962B77917700EE30F7 /* BaseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,17 +335,34 @@
 		FA4CB2052B72738C0063A0D3 /* UIKitCatalogUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FA4CB20F2B7294CF0063A0D3 /* Basic Elements */,
+				FA4CB2102B73F5630063A0D3 /* Screens */,
+				FA4CB20F2B7294CF0063A0D3 /* Tests */,
+				FA4CB2112B73F61F0063A0D3 /* BaseTest.swift */,
 			);
 			path = UIKitCatalogUITests;
 			sourceTree = "<group>";
 		};
-		FA4CB20F2B7294CF0063A0D3 /* Basic Elements */ = {
+		FA4CB20F2B7294CF0063A0D3 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				FA4CB2062B72738C0063A0D3 /* UIKitCatalogUIBasicElementsTests.swift */,
+				FA4CB2172B73FBF50063A0D3 /* HomeScreenTests.swift */,
+				FA4CB21D2B7408CD0063A0D3 /* AlertViewsScreenTests.swift */,
+				FABABC922B751FB700EE30F7 /* PickerWheelScreenTests.swift */,
 			);
-			path = "Basic Elements";
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		FA4CB2102B73F5630063A0D3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FA4CB2132B73F7520063A0D3 /* HomeScreen.swift */,
+				FA4CB21B2B7405AF0063A0D3 /* AlertViewsScreen.swift */,
+				FABABC902B751EB400EE30F7 /* PickerViewScreen.swift */,
+				FABABC942B77908000EE30F7 /* SliderScreen.swift */,
+				FABABC962B77917700EE30F7 /* BaseScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -490,7 +525,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABABC912B751EB400EE30F7 /* PickerViewScreen.swift in Sources */,
+				FA4CB2182B73FBF50063A0D3 /* HomeScreenTests.swift in Sources */,
+				FA4CB21E2B7408CD0063A0D3 /* AlertViewsScreenTests.swift in Sources */,
+				FA4CB21C2B7405AF0063A0D3 /* AlertViewsScreen.swift in Sources */,
+				FABABC972B77917700EE30F7 /* BaseScreen.swift in Sources */,
 				FA4CB2072B72738C0063A0D3 /* UIKitCatalogUIBasicElementsTests.swift in Sources */,
+				FABABC932B751FB700EE30F7 /* PickerWheelScreenTests.swift in Sources */,
+				FABABC952B77908000EE30F7 /* SliderScreen.swift in Sources */,
+				FA4CB2142B73F7520063A0D3 /* HomeScreen.swift in Sources */,
+				FA4CB2122B73F61F0063A0D3 /* BaseTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

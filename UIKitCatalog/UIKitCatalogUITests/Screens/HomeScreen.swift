@@ -8,42 +8,45 @@
 
 import XCTest
 
-class Home: BaseScreen {
-    private lazy var activityIndicators = app.staticTexts["Activity Indicators"]
-    private lazy var alertViews = app.staticTexts["Alert View"]
-    private lazy var buttons = app.staticTexts["Buttons"]
-    private lazy var datePicker = app.staticTexts[ "Date Picker"]
-    private lazy var imageView = app.staticTexts["Image View"]
-    private lazy var pageControl = app.staticTexts["Page Control"]
-    private lazy var pickerView = app.staticTexts["Picker View"]
-    private lazy var progressViews = app.staticTexts["Progress Views"]
-    private lazy var search = app.staticTexts["Search"]
-    private lazy var segmentedControls = app.staticTexts["Segmented Controls"]
-    private lazy var sliders = app.staticTexts["Sliders"]
-    private lazy var stackViews = app.staticTexts["Stack Views"]
-    private lazy var steppers = app.staticTexts["Steppers"]
-    private lazy var textFields = app.staticTexts["Text Fields"]
-    private lazy var textView = app.staticTexts["Text View"]
-    private lazy var toolbars = app.staticTexts["Toolbars"]
-    private lazy var webView = app.staticTexts["Web View"]
+class HomeScreen {
+    let app: XCUIApplication
+    let activityIndicators: XCUIElement
+    let alertViews: XCUIElement
+    let buttons: XCUIElement
+    let datePicker: XCUIElement
+    let imageView: XCUIElement
+    let pageControl: XCUIElement
+    let pickerView: XCUIElement
+    let progressViews: XCUIElement
+    let search: XCUIElement
+    let segmentedControls: XCUIElement
+    let sliders: XCUIElement
+    let stackViews: XCUIElement
+    let steppers: XCUIElement
+    let textFields: XCUIElement
+    let textView: XCUIElement
+    let toolbars: XCUIElement
+    let webView: XCUIElement
     
-    func validateElementsAreLoaded() {
-        XCTAssertTrue(activityIndicators.exists)
-        XCTAssertTrue(alertViews.exists)
-        XCTAssertTrue(buttons.exists)
-        XCTAssertTrue(datePicker.exists)
-        XCTAssertTrue(imageView.exists)
-        XCTAssertTrue(pageControl.exists)
-        XCTAssertTrue(pickerView.exists)
-        XCTAssertTrue(progressViews.exists)
-        XCTAssertTrue(search.exists)
-        XCTAssertTrue(segmentedControls.exists)
-        XCTAssertTrue(sliders.exists)
-        XCTAssertTrue(stackViews.exists)
-        XCTAssertTrue(steppers.exists)
-        XCTAssertTrue(textFields.exists)
-        XCTAssertTrue(toolbars.exists)
-        XCTAssertTrue(webView.exists)
+    init(app: XCUIApplication) {
+        self.app = app
+        activityIndicators = app.staticTexts["Activity Indicators"]
+        alertViews = app.staticTexts["Alert Views"]
+        buttons = app.staticTexts["Buttons"]
+        datePicker = app.staticTexts[ "Date Picker"]
+        imageView = app.staticTexts["Image View"]
+        pageControl = app.staticTexts["Page Control"]
+        pickerView = app.staticTexts["Picker View"]
+        progressViews = app.staticTexts["Progress Views"]
+        search = app.staticTexts["Search"]
+        segmentedControls = app.staticTexts["Segmented Controls"]
+        sliders = app.staticTexts["Sliders"]
+        stackViews = app.staticTexts["Stack Views"]
+        steppers = app.staticTexts["Steppers"]
+        textFields = app.staticTexts["Text Fields"]
+        textView = app.staticTexts["Text View"]
+        toolbars = app.staticTexts["Toolbars"]
+        webView = app.staticTexts["Web View"]
     }
     
 }
