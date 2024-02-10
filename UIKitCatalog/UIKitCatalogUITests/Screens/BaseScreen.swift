@@ -14,5 +14,6 @@ class BaseScreen {
     
     init(app: XCUIApplication) {
         self.app = app
+        backButton = app.buttons["UIKitCatalog"]
     }
 }
